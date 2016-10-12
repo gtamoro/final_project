@@ -6,8 +6,10 @@ function start() {
 
 function changeNav() {
   if($(window).scrollTop() === 0) {
-    $("#navigation").css('background-color','black');
+    $("#navigation").toggleClass("notTop",false);
+    $("#navigation").toggleClass("top", true);
   } else {
-    $("#navigation").css('background-color','rgba(0,0,0,0.5');
+    $("#navigation").toggleClass("top",false);
+    $("#navigation").toggleClass("notTop",true);
   }
 }
