@@ -6,7 +6,7 @@ function start() {
 
 function setupCalendar() {
   $('#calendar').fullCalendar( {
-    googleCalendarApiKey: 'AIzaSyDrDbVRFvaMZb5NuhZzVM-9rEk83NLQbo0',
+    googleCalendarApiKey: 'AIzaSyBTj_T3c8bnFq_awcTJ362dHCApossSNJQ',
     events: {
       googleCalendarId: 'kt78h7amqeqbhssu8roljo4udo@group.calendar.google.com'
     }
