@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Cormorant+Garamond" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Work+Sans|Lora" rel="stylesheet">
+    <script type='text/javascript' src='js/jquery.min.js'></script>
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
@@ -55,15 +55,20 @@
       </div>
       <footer>
         <h4 class="name">Mac n Choux</h4>
-        <ul>
-          <li>
-            <a href="#"><img class="social" src="images/instagram.png" alt="Instagram logo"></a>
-          </li>
-          <li>
-            <a href="#"><img class="social" src="images/facebook.png" alt="Facebook logo"></a>
-          </li>
-        </ul>
-        <p class="copyright">Copyright 2016.</p>
+        <p>Cakes & Pastries</p>
+        <div id="social">
+          <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <form class="newsletter-form" method="post">
+          <label>
+            Subscribe to our newsletter
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <input type="email" name="email" placeholder="Email address" />
+          </label>
+          <button type="submit">Sign-up</button>
+        </form>
       </footer>
     </div>
   </body>

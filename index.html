@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Cormorant+Garamond" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Work+Sans|Mate" rel="stylesheet">
+    <script type='text/javascript' src='js/jquery.min.js'></script>
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
@@ -24,45 +24,43 @@
         </div>
       </div>
       <div id="welcome">
-        <div class="left">
+        <div class="panel">
           <h2>Welcome</h2>
-          <p><span class="name">Mac n Choux</span> is a Melbourne based patisserie specialising in macarons and choux pastries.
-          </p>
-          <p class="name"><a href="welcome.html">&gt;</a></p>
+          <p><span class="name">Mac n Choux</span> is a Melbourne based patisserie specialising in macarons and choux pastries.</p>
+          <a href="welcome.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
         </div>
-        <div class="right">
-          <img src="images/DSC_0427.jpg" alt="heroImg" />
-        </div>
+        <div style="background-image: url(images/DSC_0427.jpg)" class="panel gallery-img cover center"></div>
       </div>
       <div id="gallery">
-        <div class="left">
-          <img src="images/DSC_0570.jpg" alt="cake1" />
-        </div>
-        <div class="right">
+        <div class="panel gallery-img cover center" style="background-image: url(images/DSC_0570.jpg)"></div>
+        <div class="panel">
           <h2>Gallery</h2>
           <p>Browse our products</p>
-            <p class="name"><a href="gallery.html">&gt;</a></p>
+          <a href="gallery.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
         </div>
       </div>
       <div id="markets">
         <h2>Markets</h2>
-        <p>
-        We are so excited to supply our products in Melbourne's best farmers markets. We'd love to see you there!
-        <p>
-          <p class="name"><a href="markets.html">find out more &gt;</a></p>
+        <p>We are so excited to supply our products in Melbourne's best farmers markets. We'd love to see you there!</p>
+        <a href="markets.html"><i class="fa fa-calendar" aria-hidden="true"></i></a>
       </div>
 
       <footer>
         <h4 class="name">Mac n Choux</h4>
-        <ul>
-          <li>
-            <a href="#"><img class="social" src="images/instagram.png" alt="Instagram logo"></a>
-          </li>
-          <li>
-            <a href="#"><img class="social" src="images/facebook.png" alt="Facebook logo"></a>
-          </li>
-        </ul>
-        <p class="copyright">Copyright 2016.</p>
+        <p>Cakes & Pastries</p>
+        <div id="social">
+          <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <form class="newsletter-form" method="post">
+          <label>
+            Subscribe to our newsletter
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <input type="email" name="email" placeholder="Email address" />
+          </label>
+          <button type="submit">Sign-up</button>
+        </form>
       </footer>
     </div>
   </body>
