@@ -4,10 +4,10 @@
     <title>Gallery | Mac n Choux</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Work+Sans|Lora" rel="stylesheet">
-    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
@@ -15,51 +15,41 @@
       <header>
         <div id="navigation">
           <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
-          <ul>
+          <ul id="navlist">
             <li><a href="welcome.html">Welcome</a></li>
-            <li><a href="">Gallery</a></li>
+            <li><a class="activePage">Gallery</a></li>
             <li><a href="markets.html">Markets</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </header>
-      <div id="gallery">
-        <div id="grid" class="left">
-          <div style='background-image: url(images/DSC_0570.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0016.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0040.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0074.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0195.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0373.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0388.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0434.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0495.jpg)' class="gridItem gallery-img-cover center"></div>
-
-          <div style='background-image: url(images/DSC_0523.jpg)' class="gridItem gallery-img-cover center"></div>
-
-        </div>
-        <div class="right">
-          <h2>Gallery</h2>
-          <p>
-          Below you will find just some of the baked goods we offer. We constantly update our menu and like to experiment with seasonal flavours and ingredients, so follow us on <a href="">Instagram</a> and like us on <a href="">Facebook</a> to stay up-to-date on the menu items available.
-          </p>
+      <div class="section wide">
+        <h1>Gallery</h1>
+        <p>
+        Below you will find just some of the baked goods we offer. We constantly update our menu and like to experiment with seasonal flavours and ingredients, so follow us on <a class="normalLink" href="">Instagram</a> and like us on <a class="normalLink" href="">Facebook</a> to stay up-to-date on the menu items available.
+        </p>
+        <div id="grid">
+          <div style="background-image: url(images/DSC_0585.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0016.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0040.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0084.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0195.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0373.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0388.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0434.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0495.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0523.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0507.jpg)" class="panel wide gallery-img cover center"></div>
+          <div style="background-image: url(images/DSC_0552.jpg)" class="panel wide gallery-img cover x-center y-left"></div>
         </div>
       </div>
       <footer>
-        <h4 class="name">Mac n Choux</h4>
-        <p>Cakes & Pastries</p>
+        <h4>Mac n Choux</h4>
+        <p>cakes & pastries</p>
         <div id="social">
           <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+          <a href="mailto:gtamoro@gmail.com?Subject=Hi%20there!" target="_top"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
         </div>
         <form class="newsletter-form" method="post">
           <label>

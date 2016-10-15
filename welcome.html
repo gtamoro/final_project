@@ -4,9 +4,9 @@
     <title>About Us | Mac n Choux</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Work+Sans|Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Work+Sans|Mate" rel="stylesheet">
     <script type='text/javascript' src='js/jquery.min.js'></script>
     <script type="text/javascript" src="js/index.js"></script>
   </head>
@@ -15,33 +15,34 @@
       <header>
         <div id="navigation">
           <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
-          <ul>
-            <li><a href="">Welcome</a></li>
+          <ul id="navlist">
+            <li><a class="activePage">Welcome</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="markets.html">Markets</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </header>
-      <div id="welcome">
-        <div class="left">
-          <h2>Welcome</h2>
-          <p><span class="name">Mac n Choux</span> is a Melbourne based patisserie specialising in <span class="emphasis">mac</span>arons <span class="emphasis">and</span> <span class="emphasis">choux</span> pastries. Our products are thoughtfully crafted using the finest quality ingredients and materials. But expect great pastries with our own twist!
-          Founded in 2016, we (Nelly and Grace met at pastry school) came together over our love of all things pastry.
-          <a href="">Contact us</a> for all your cake and dessert catering needs. Or <a href="markets.html">say hi</a> when we head out to some of Melbourne's best farmers markets.
-          </p>
-        </div>
-        <div class="right">
-          <img src="images/DSC_0427.jpg" alt="heroImg" />
+      <div class="section wide">
+        <h1>Welcome</h1>
+        <p><span class="name">Mac n Choux</span> is a Melbourne based patisserie specialising in cakes, macarons and choux pastries. Our products are thoughtfully crafted using the finest quality ingredients and materials. But expect great pastries with our own twist! Founded in 2016, we (Nelly and Grace met at pastry school) came together over our love of all things pastry.
+        <a class="normalLink" href="contact.html">Contact us</a> for all your cake and dessert catering needs. Or <a class="normalLink" href="markets.html">say hi</a> when we head out to some of Melbourne's best farmers markets.</p>
+        <div id="grid">
+          <div style="background-image: url(images/DSC_0005.jpg)" class="panel wide gallery-img cover center">
+          </div>
+          <div style="background-image: url(images/profile.jpg)" class="panel wide gallery-img cover center">
+          </div>
+          <div style="background-image: url(images/DSC_0427.jpg)" class="panel wide gallery-img cover center">
+          </div>
         </div>
       </div>
       <footer>
-        <h4 class="name">Mac n Choux</h4>
-        <p>Cakes & Pastries</p>
+        <h4>Mac n Choux</h4>
+        <p>cakes & pastries</p>
         <div id="social">
           <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+          <a href="mailto:gtamoro@gmail.com?Subject=Hi%20there!" target="_top"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
         </div>
         <form class="newsletter-form" method="post">
           <label>
