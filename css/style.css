@@ -46,12 +46,12 @@ body {
   font-family: 'Cormorant Garamond',serif;
 }
 
-.name {
-  font-weight: 800;
+p {
+  text-align: center;
 }
 
-.emphasis {
-  text-decoration: underline;
+.name {
+  font-weight: bolder;
 }
 
 i {
@@ -75,6 +75,24 @@ a.normalLink {
   color: #B87333;
 }
 
+#menuList a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.72em;
+  letter-spacing: 0.2em;
+  font-family: 'Mate', serif;
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+
+#menuList a:hover {
+  border-bottom: 1px solid #B87333;
+}
+
+h2 a:hover {
+  border-bottom: 1px solid #B87333;
+}
 
 h1 {
   color: #B87333;
@@ -109,21 +127,69 @@ h4 {
   color: white;
 }
 
+.fa {
+  padding-top: 20px;
+}
+
 input {
   height: 25px;
   width: 200px;
   margin: 10px;
+  font-size: 14px;
 }
+
 button {
   background-color: #B87333;
   border: none;
   cursor: pointer;
   height: 25px;
+  width: 75px;
+  font-size: 14px;
 }
 
 footer {
   color: #B87333;
-  /*text-align: center;*/
+}
+
+/******************************************
+/* IMAGE LAYOUT
+/*******************************************/
+.imageDiv.contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+}
+
+.imageDiv.cover {
+  background-size: cover;
+}
+
+.imageDiv.center {
+  background-position: center center;
+}
+
+.imageDiv.x-center {
+  background-position-x: center;
+}
+
+.imageDiv.y-center {
+  background-position-y: center;
+}
+
+.imageDiv.x-left {
+  background-position-x: left;
+}
+
+.imageDiv.x-right {
+  background-position-x: right;
+}
+
+.imageDiv.y-left {
+  background-position-y: left;
+}
+
+.imageDiv.y-right {
+  background-position-y: right;
 }
 
 /******************************************
@@ -136,16 +202,13 @@ footer {
   margin: 0 auto;
 }
 
-
 #landing {
-  background: url(../images/caramel_entremet.jpg) no-repeat top center #131e27;
-  background-size: cover;
+  display: flex;
   flex-direction: column;
   height: 100vh;
-  display: flex;
 }
 
-#navigation {
+#navBar {
   display: flex;
   flex-direction: row;
   padding: 15px 30px 15px 30px;
@@ -157,11 +220,15 @@ footer {
   background-color: #3E3938;
 }
 
-#navigation.top {
+.header {
+  min-height: 110px;
+}
+
+#navBar.top {
   background-color: #3E3938;
 }
 
-#navigation.notTop {
+#navBar.notTop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -179,48 +246,6 @@ footer {
   padding: 100px 20% 100px 20%;
 }
 
-.fa {
-  padding-top: 10px;
-}
-
-.gallery-img.contain {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: inherit;
-}
-
-.gallery-img.cover {
-  background-size: cover;
-}
-
-.gallery-img.center {
-  background-position: center center;
-}
-
-.gallery-img.x-center {
-  background-position-x: center;
-}
-
-.gallery-img.y-center {
-  background-position-y: center;
-}
-
-.gallery-img.x-left {
-  background-position-x: left;
-}
-
-.gallery-img.x-right {
-  background-position-x: right;
-}
-
-.gallery-img.y-left {
-  background-position-y: left;
-}
-
-.gallery-img.y-right {
-  background-position-y: right;
-}
-
 .panel {
   display: flex;
   flex-direction: column;
@@ -228,10 +253,10 @@ footer {
   align-items: center;
   width: 50%;
   padding: 7%;
-  position:relative;
+  position: relative;
 }
 
-.panel.wide {
+.panel.small {
   width: 30%;
 }
 
@@ -247,12 +272,12 @@ footer {
   padding-top: 30px;
 }
 
-.panel.gallery-img:hover {
+.panel.imageDiv:hover {
   opacity: 0.2;
   filter: alpha(opacity=20); /* For IE8 and earlier */
 }
 
-.panelLink {
+.panelHover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -263,15 +288,6 @@ footer {
   background-color: #FFF;
   opacity: 0;
   filter: alpha(opacity=1);
-}
-
-header {
-  min-height: 110px;
-}
-
-p {
-  text-align: center;
-  /*margin-bottom: 20px;*/
 }
 
 footer {
@@ -292,33 +308,10 @@ li {
   padding: 20px;
 }
 
-#navlist a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 0.72em;
-  letter-spacing: 0.2em;
-  font-family: 'Mate', serif;
-  font-weight: lighter;
-  padding-bottom: 5px;
-}
-
-#navlist a:hover {
-  border-bottom: 1px solid #B87333;
-}
-
-h2 a:hover {
-  border-bottom: 1px solid #B87333;
-}
 
 #logo {
   height: 80px;
   width: auto;
-}
-
-.logoBody {
-  width: 100px;
-  height: auto;
 }
 
 #social {
@@ -336,20 +329,6 @@ h2 a:hover {
   flex-wrap: wrap;
 }
 
-.gridItem {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  margin: 1px;
-}
-
-.gridItemImage {
-  min-width: 100%;
-  min-height: 100%;
-  width: 80%;
-  height: auto;
-}
-
 #calendar
 {
   width: 80%;
@@ -358,9 +337,37 @@ h2 a:hover {
   padding-top: 20px;
 }
 
-/* Breakpoint at 768px */
-@media only screen and (max-width : 768px) {
-  .container {
-    width: 100%;
+#menuButton {
+  display: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
+@media only screen and (max-width : 650px) {
+
+  #menuList {
+    display: none;
+  }
+
+  #menuButton {
+    display: inline-block;
+    float: right;
+    padding-top: 10px;
+    font-size: 32px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #logo {
+    height: 90px;
+    width: auto;
+  }
+
+  ul {
+    flex-direction: column;
   }
 }
+
+@media only screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media only screen and (min-width:1281px) { /* hi-res laptops and desktops */ }
