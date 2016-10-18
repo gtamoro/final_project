@@ -9,9 +9,11 @@ function start() {
   $(".menuButton").click(displayMenu);
 }
 
-// make the panels square
+// make all %-based panels square
+// and reset the side nav menu (hide it)
 function adjustSquarePanel() {
   $('.panel').height($('.panel').width());
+  $(".sidebar").hide();
 }
 
 // make the navBar opaque when scrolling down, and solid when on top of screen.

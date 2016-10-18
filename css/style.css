@@ -360,6 +360,12 @@ li {
 
 .sidebar {
   display: none;
+  position: fixed;
+  top: 136px;
+  right: 0;
+  width: 200px;
+  background-color: #3E3938;
+  z-index: 999;
 }
 
 .menuButton {
@@ -372,16 +378,6 @@ li {
 
   .menuList {
     display: none;
-  }
-
-  .sidebar {
-    display: none;
-    position: fixed;
-    top: 136px;
-    right: 0;
-    width: 200px;
-    background-color: #3E3938;
-    z-index: 999;
   }
 
   #mobileMenu {
@@ -441,4 +437,16 @@ li {
     width: 70%;
     margin: 10px;
   }
+
+  .part.wide {
+    padding: 80px 5% 80px 5%;
+  }
+
+  #calendar
+  {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
 }
