@@ -27,8 +27,16 @@ function toggleNavOpacity() {
 
 function signUp(event) {
   event.preventDefault();
+  if(emailValid()) {
+    $.featherlight("#signUpMsg");
+    $("#email").val("");
+  }
 }
 
+function emailValid() {
+  var email = $("#email").val();
+  return email.length > 0;
+}
 function displayMenu(event) {
   event.preventDefault();
   $("#menuList").slideToggle();

@@ -38,24 +38,17 @@
 /*******************************************/
 
 body {
-  background-color: lightgrey;
+  background-color: whitesmoke;
   font-size: 17px;
   letter-spacing: 0.2px;
   line-height: 1.4;
   color: #606060;
   font-family: 'Cormorant Garamond',serif;
-}
-
-p {
   text-align: center;
 }
 
 .name {
   font-weight: bolder;
-}
-
-i {
-  cursor: pointer;
 }
 
 a,
@@ -75,12 +68,17 @@ a.normalLink {
   color: #B87333;
 }
 
+#menuList {
+  display: flex;
+  flex-direction: row;
+}
+
 #menuList a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 0.72em;
-  letter-spacing: 0.2em;
+  font-size: 0.8em;
+  letter-spacing: 0.22em;
   font-family: 'Mate', serif;
   font-weight: lighter;
   padding-bottom: 5px;
@@ -129,6 +127,7 @@ h4 {
 
 .fa {
   padding-top: 20px;
+  cursor: pointer;
 }
 
 input {
@@ -258,6 +257,7 @@ footer {
 
 .panel.small {
   width: 30%;
+  margin: 10px;
 }
 
 .panel.top {
@@ -268,8 +268,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .panel.imageDiv:hover {
@@ -293,7 +293,7 @@ footer {
 footer {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
   background-color: #3E3938;
   justify-content: center;
   align-items: center;
@@ -310,7 +310,7 @@ li {
 
 
 #logo {
-  height: 80px;
+  height: 100px;
   width: auto;
 }
 
@@ -323,27 +323,36 @@ li {
   padding-bottom: 10px;
 }
 
-#grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 #calendar
 {
   width: 80%;
   margin: 0 auto;
   z-index: 1;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #menuButton {
   display: none;
 }
 
+.lightbox {
+  display: none;
+}
+
+#signUpMsg {
+  padding-: 50px;
+  text-align: center;
+}
+
+.lightboxLogo {
+  width: 30%;
+  height: auto;
+  padding-bottom: 20px;
+}
 /* Smartphones (portrait and landscape) ----------- */
 /*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
-@media only screen and (max-width : 650px) {
+@media only screen and (max-width : 768px) {
 
   #menuList {
     display: none;
@@ -366,6 +375,9 @@ li {
 
   ul {
     flex-direction: column;
+    text-align: right;
+    display: block;
+    float: right;
   }
 }
 

@@ -5,6 +5,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
     <link href='css/fullcalendar.css' rel='stylesheet' />
     <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
     <link rel="stylesheet" href="css/style.css" />
@@ -13,6 +14,7 @@
     <script type='text/javascript' src='js/jquery.min.js'></script>
     <script type="text/javascript" src='js/fullcalendar.min.js'></script>
     <script type='text/javascript' src='js/gcal.js'></script>
+    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/markets.js"></script>
 
@@ -35,7 +37,7 @@
       </div>
       <div class="section wide">
         <h1>Markets</h1>
-        <p>We are so excited to supply our products in Melbourne's best farmers markets. We'd love to see you there!
+        <p>We are so excited to supply our products in Melbourne's best farmers markets. Here are the dates we've set up so far. We'd love to see you there!
         </p>
         <div id="calendar">
         </div>
@@ -52,10 +54,14 @@
           <label>
             Subscribe to our newsletter
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <input type="email" name="email" placeholder="Email address" />
+            <input type="email" id="email" name="email" placeholder="Email address" />
           </label>
           <button type="submit">Sign-up</button>
         </form>
+        <div class="lightbox" id="signUpMsg">
+          <img src="images/logo_grey.png" class="lightboxLogo" alt="logo">
+          <p>Thank you for signing up to our newsletter. Stay tuned!</p>
+        </div>
       </footer>
     </div>
   </body>

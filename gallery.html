@@ -5,9 +5,11 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Work+Sans|Lora" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
@@ -32,18 +34,18 @@
         Below you will find just some of the baked goods we offer. We constantly update our menu and like to experiment with seasonal flavours and ingredients, so follow us on <a class="normalLink" href="">Instagram</a> and like us on <a class="normalLink" href="">Facebook</a> to stay up-to-date on the menu items available.
         </p>
         <div id="grid">
-          <div style="background-image: url(images/DSC_0585-min.jpg)" class="panel small imageDiv cover x-center y-right"></div>
+          <div style="background-image: url(images/DSC_0585-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0016-min.jpg)" class="panel small imageDiv cover center"></div>
-          <div style="background-image: url(images/DSC_0040-min.jpg)" class="panel small imageDiv cover center"></div>
+          <div style="background-image: url(images/DSC_0026-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0084-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0195-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0373-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0388-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0434-min.jpg)" class="panel small imageDiv cover center"></div>
-          <div style="background-image: url(images/DSC_0495-min.jpg)" class="panel small imageDiv cover center"></div>
+          <div style="background-image: url(images/DSC_0492-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0523-min.jpg)" class="panel small imageDiv cover center"></div>
           <div style="background-image: url(images/DSC_0507-min.jpg)" class="panel small imageDiv cover center"></div>
-          <div style="background-image: url(images/DSC_0552-min.jpg)" class="panel small imageDiv cover x-center y-left"></div>
+          <div style="background-image: url(images/DSC_0552-min.jpg)" class="panel small imageDiv cover center"></div>
         </div>
       </div>
       <footer>
@@ -58,10 +60,14 @@
           <label>
             Subscribe to our newsletter
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <input type="email" name="email" placeholder="Email address" />
+            <input type="email" id="email" name="email" placeholder="Email address" />
           </label>
           <button type="submit">Sign-up</button>
         </form>
+        <div class="lightbox" id="signUpMsg">
+          <img src="images/logo_grey.png" class="lightboxLogo" alt="logo">
+          <p>Thank you for signing up to our newsletter. Stay tuned!</p>
+        </div>
       </footer>
     </div>
   </body>
