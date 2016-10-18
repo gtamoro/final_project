@@ -68,12 +68,12 @@ a.normalLink {
   color: #B87333;
 }
 
-#menuList {
+.menuList {
   display: flex;
   flex-direction: row;
 }
 
-#menuList a {
+.menuList a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ a.normalLink {
   padding-bottom: 5px;
 }
 
-#menuList a:hover {
+.menuList a:hover {
   border-bottom: 1px solid #B87333;
 }
 
@@ -231,13 +231,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.section {
+.part {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.section.wide {
+.part.wide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,7 +249,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 50%;
   padding: 7%;
   position: relative;
@@ -257,7 +256,7 @@ footer {
 
 .panel.small {
   width: 30%;
-  margin: 10px;
+  margin: 1%;
 }
 
 .panel.top {
@@ -267,6 +266,7 @@ footer {
 #grid {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -284,7 +284,7 @@ footer {
   top: 0;
   left: 0;
   text-decoration: none;
-  z-index: 10; /* Places the link above everything else in the div */
+  z-index: 5; /* Places the link above everything else in the div */
   background-color: #FFF;
   opacity: 0;
   filter: alpha(opacity=1);
@@ -307,7 +307,6 @@ ul {
 li {
   padding: 20px;
 }
-
 
 #logo {
   height: 100px;
@@ -332,9 +331,7 @@ li {
   padding-bottom: 30px;
 }
 
-#menuButton {
-  display: none;
-}
+/* Featherlight Modal Styling */
 
 .lightbox {
   display: none;
@@ -350,36 +347,116 @@ li {
   height: auto;
   padding-bottom: 20px;
 }
-/* Smartphones (portrait and landscape) ----------- */
-/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
+
+/* Side nav styling */
+#container {
+  transform: translate(0, 0, 0);
+  transition: transform .3s;
+}
+
+#navBar {
+  z-index: 999;
+}
+
+.sidebar {
+  display: none;
+}
+
+.menuButton {
+  display: none;
+}
+
+/* Tablets
+ ----------- */
 @media only screen and (max-width : 768px) {
 
-  #menuList {
+  .menuList {
     display: none;
   }
 
-  #menuButton {
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 136px;
+    right: 0;
+    width: 200px;
+    background-color: #3E3938;
+    z-index: 999;
+  }
+
+  #mobileMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mobileMenu a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.22em;
+    font-family: 'Mate', serif;
+    font-weight: lighter;
+    padding-bottom: 5px;
+  }
+
+  #mobileMenu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .menuButton {
+    cursor: pointer;
     display: inline-block;
     float: right;
-    padding-top: 10px;
-    font-size: 32px;
+    padding-bottom: 15px;
     color: white;
-    margin-right: 10px;
-    cursor: pointer;
+    font-size: 32px;
   }
 
-  #logo {
-    height: 90px;
-    width: auto;
+  #container.isOpen {
+    transform: translate(-200px, 0, 0);
   }
 
-  ul {
+  .part {
     flex-direction: column;
-    text-align: right;
-    display: block;
-    float: right;
+  }
+
+  .panel {
+    width: 100%;
+  }
+
+  .part.wide {
+    padding: 100px 10% 100px 10%;
+  }
+
+  .panel.small {
+    width: 40%;
+    margin: 10px;
+  }
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 480px) {
+
+  .panel.small {
+    width: 70%;
+    margin: 10px;
   }
 }
 
-@media only screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media only screen and (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .panel.small {
+    width: 70%;
+    margin: 10px;
+  }
+
+  #logo {
+    width: 150px;
+    height: auto;
+  }
+}

@@ -6,7 +6,7 @@ function start() {
   $(document).scroll(toggleNavOpacity);
   $(window).resize(adjustSquarePanel);
   $(".newsletter-form").submit(signUp);
-  $("#menuButton").click(displayMenu);
+  $(".menuButton").click(displayMenu);
 }
 
 // make the panels square
@@ -37,7 +37,7 @@ function emailValid() {
   var email = $("#email").val();
   return email.length > 0;
 }
-function displayMenu(event) {
-  event.preventDefault();
-  $("#menuList").slideToggle();
+function displayMenu() {
+  $("#container").toggleClass("isOpen");
+  $(".sidebar").toggle();
 }
