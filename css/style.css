@@ -436,27 +436,10 @@ li {
 
 }
 
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 
   .panel.small {
     width: 70%;
     margin: 10px;
-  }
-}
-
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-  .panel.small {
-    width: 70%;
-    margin: 10px;
-  }
-
-  #logo {
-    width: 150px;
-    height: auto;
   }
 }
